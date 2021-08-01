@@ -95,7 +95,7 @@ async def filter(client, message):
             [InlineKeyboardButton(text=f"🎬🆄🅼🆁 🔰 ᴘᴀɢᴇs 1/{data['total']} 🔰 🆄🅼🆁🎬",callback_data="pages")]
         )
 
-        await message.reply_text(b>",
+        await message.reply_text("about me?!!?",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )    
 
