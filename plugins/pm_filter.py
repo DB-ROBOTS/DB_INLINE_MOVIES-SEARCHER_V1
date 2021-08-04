@@ -257,8 +257,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
         elif query.data == "about":
             buttons = [
-                [ InlineKeyboardButton('', url='https://t.me/db_')
-                    InlineKeyboardButton('𝙱𝙾𝚃𝚂 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/db_robots'),
+                [ InlineKeyboardButton('🔎Sᴇᴀʀᴄʜ Mᴏᴠɪᴇs..', switch_inline_query_current_chat=query)],
+                 [   InlineKeyboardButton('𝙱𝙾𝚃𝚂 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/db_robots'),
                     InlineKeyboardButton('𝙱𝙾𝚃𝚂 𝙶𝚁𝙾𝚄𝙿', url='https://t.me/db_helper')
                 ],[InlineKeyboardButton('💡JOIN OUR ALL CHANNELs💡', url='https://t.me/uni_movies_box')]
                 ]
@@ -275,7 +275,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 caption = files.caption
                 buttons = [
                     [
-                        InlineKeyboardButton('🃏𝙱𝙾𝚃𝚂 𝙲𝙷𝙰𝙽𝙽𝙴𝙻🃏', url='https://t.me/DB_ROBOTS'),
+                        InlineKeyboardButton('🔎Sᴇᴀʀᴄʜ Mᴏᴠɪᴇs..', switch_inline_query_current_chat=query)],
+                    [    InlineKeyboardButton('🃏𝙱𝙾𝚃𝚂 𝙲𝙷𝙰𝙽𝙽𝙴𝙻🃏', url='https://t.me/DB_ROBOTS'),
                         InlineKeyboardButton('🎲𝙱𝙾𝚃𝚂 𝙶𝚁𝙾𝚄𝙿🎲', url='https://t.me/DB_HELPER')
                     ],[InlineKeyboardButton('💡JOIN OUR ALL CHANNELs💡', url='https://t.me/uni_movies_box')]
                     ]
@@ -298,8 +299,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 size=files.file_size
                 caption = files.caption
                 buttons = [
-                    [
-                        InlineKeyboardButton('🃏𝙱𝙾𝚃𝚜 𝙲𝙷𝙰𝙽𝙽𝙴𝙻🃏', url='https://t.me/db_robots'),
+                    [ InlineKeyboardButton('🔎Sᴇᴀʀᴄʜ Mᴏᴠɪᴇs..', switch_inline_query_current_chat=query)],
+                    [    InlineKeyboardButton('🃏𝙱𝙾𝚃𝚜 𝙲𝙷𝙰𝙽𝙽𝙴𝙻🃏', url='https://t.me/db_robots'),
                         InlineKeyboardButton('🎲𝙱𝙾𝚃𝚜 𝙶𝚁𝙾𝚄𝙿🎲', url='https://t.me/db_helper')
                     ],[  InlineKeyboardButton('📑𝐉𝐎𝐈𝐍 𝐎𝐔𝐑 𝐀𝐋𝐋 𝐂𝐇𝐀𝐍𝐍𝐄𝐋𝐒📑', url='https://t.me/uni_movies_box')]
                     ]
