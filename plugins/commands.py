@@ -55,10 +55,14 @@ async def start(bot, cmd):
             for files in filedetails:
                 file_caption = files.caption
                 buttons = [
-                    [
-                        InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122')
-                    ]
+                    [ InlineKeyboardButton('🔎Sᴇᴀʀᴄʜ Mᴏᴠɪᴇs..', switch_inline_query_current_chat=query)],
+
+                    [    InlineKeyboardButton('🃏𝙱𝙾𝚃𝚜 𝙲𝙷𝙰𝙽𝙽𝙴𝙻🃏', url='https://t.me/db_robots'),
+
+                        InlineKeyboardButton('🎲𝙱𝙾𝚃𝚜 𝙶𝚁𝙾𝚄𝙿🎲', url='https://t.me/db_helper')
+
+                    ],[  InlineKeyboardButton('📑𝐉𝐎𝐈𝐍 𝐎𝐔𝐑 𝐀𝐋𝐋 𝐂𝐇𝐀𝐍𝐍𝐄𝐋𝐒📑', url='https://t.me/uni_movies_box')]
+
                     ]
                 await bot.send_cached_media(
                     chat_id=cmd.from_user.id,
@@ -181,10 +185,7 @@ async def delete(bot, message):
         await msg.edit('File not found in database')
 @Client.on_message(filters.command('about'))
 async def bot_info(bot, message):
-    buttons = [
-        [
-            InlineKeyboardButton('Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('Source Code', url='https://github.com/subinps/Media-Search-bot')
+    buttons = [')
         ]
         ]
     await message.reply(text="<b>Developer : <a href='https://t.me/subinps_bot'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/subin_works'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
