@@ -90,14 +90,17 @@ async def start(bot, cmd):
             START_MSG,
             parse_mode="Markdown",
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
+            reply_markup=InlineKeyboardMarkup([ InlineKeyboardButton('🔎Sᴇᴀʀᴄʜ Mᴏᴠɪᴇs..', switch_inline_query_current_chat=query)],
+
+                    [    InlineKeyboardButton('🃏𝙱𝙾𝚃𝚜 𝙲𝙷𝙰𝙽𝙽𝙴𝙻🃏', url='https://t.me/db_robots'),
+
+                        InlineKeyboardButton('🎲𝙱𝙾𝚃𝚜 𝙶𝚁𝙾𝚄𝙿🎲', url='https://t.me/db_helper')
+
+                    ],[  InlineKeyboardButton('📑𝐉𝐎𝐈𝐍 𝐎𝐔𝐑 𝐀𝐋𝐋 𝐂𝐇𝐀𝐍𝐍𝐄𝐋𝐒📑', url='https://t.me/uni_movies_box')],
+
+                    
                     [
-                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Other Bots", url="https://t.me/subin_works/122")
-                    ],
-                    [
-                        InlineKeyboardButton("About", callback_data="about")
+                        InlineKeyboardButton("😎 𝗔𝗕𝗢𝗨𝗧 𝗠𝗘 🤖", callback_data="about")
                     ]
                 ]
             )
@@ -185,7 +188,13 @@ async def delete(bot, message):
         await msg.edit('File not found in database')
 @Client.on_message(filters.command('about'))
 async def bot_info(bot, message):
-    buttons = [')
-        ]
-        ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/subinps_bot'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/subin_works'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    buttons = [[ InlineKeyboardButton('🔎Sᴇᴀʀᴄʜ Mᴏᴠɪᴇs..', switch_inline_query_current_chat=query)],
+
+                    [    InlineKeyboardButton('🃏𝙱𝙾𝚃𝚜 𝙲𝙷𝙰𝙽𝙽𝙴𝙻🃏', url='https://t.me/db_robots'),
+
+                        InlineKeyboardButton('🎲𝙱𝙾𝚃𝚜 𝙶𝚁𝙾𝚄𝙿🎲', url='https://t.me/db_helper')
+
+                    ],[  InlineKeyboardButton('📑𝐉𝐎𝐈𝐍 𝐎𝐔𝐑 𝐀𝐋𝐋 𝐂𝐇𝐀𝐍𝐍𝐄𝐋𝐒📑', url='https://t.me/uni_movies_box')]
+
+                    ]
+    await message.reply(text="hii", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
