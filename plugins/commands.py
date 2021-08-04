@@ -94,7 +94,7 @@ async def start(bot, cmd):
                 
                 [
                 
-                [ InlineKeyboardButton('🔎Sᴇᴀʀᴄʜ Mᴏᴠɪᴇs..', switch_inline_query_current_chat=query)],
+                [ InlineKeyboardButton('🔎Sᴇᴀʀᴄʜ Mᴏᴠɪᴇs..', switch_inline_query_current_chat='')],
 
                     [    InlineKeyboardButton('🃏𝙱𝙾𝚃𝚜 𝙲𝙷𝙰𝙽𝙽𝙴𝙻🃏', url='https://t.me/db_robots'),
 
@@ -192,7 +192,7 @@ async def delete(bot, message):
         await msg.edit('File not found in database')
 @Client.on_message(filters.command('about'))
 async def bot_info(bot, message):
-    buttons = [[ InlineKeyboardButton('🔎Sᴇᴀʀᴄʜ Mᴏᴠɪᴇs..', switch_inline_query_current_chat=query)],
+    buttons = [[ InlineKeyboardButton('🔎Sᴇᴀʀᴄʜ Mᴏᴠɪᴇs..', switch_inline_query_current_chat='')],
 
                     [    InlineKeyboardButton('🃏𝙱𝙾𝚃𝚜 𝙲𝙷𝙰𝙽𝙽𝙴𝙻🃏', url='https://t.me/db_robots'),
 
