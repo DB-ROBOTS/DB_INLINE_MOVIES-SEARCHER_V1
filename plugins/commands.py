@@ -90,7 +90,11 @@ async def start(bot, cmd):
             START_MSG,
             parse_mode="Markdown",
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([ InlineKeyboardButton('🔎Sᴇᴀʀᴄʜ Mᴏᴠɪᴇs..', switch_inline_query_current_chat=query)],
+            reply_markup=InlineKeyboardMarkup(
+                
+                [
+                
+                [ InlineKeyboardButton('🔎Sᴇᴀʀᴄʜ Mᴏᴠɪᴇs..', switch_inline_query_current_chat=query)],
 
                     [    InlineKeyboardButton('🃏𝙱𝙾𝚃𝚜 𝙲𝙷𝙰𝙽𝙽𝙴𝙻🃏', url='https://t.me/db_robots'),
 
