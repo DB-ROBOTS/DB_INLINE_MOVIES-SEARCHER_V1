@@ -100,12 +100,8 @@ async def start(bot, cmd):
 
                         InlineKeyboardButton('🎲𝙱𝙾𝚃𝚜 𝙶𝚁𝙾𝚄𝙿🎲', url='https://t.me/db_helper')
 
-                    ],[  InlineKeyboardButton('📑𝐉𝐎𝐈𝐍 𝐎𝐔𝐑 𝐀𝐋𝐋 𝐂𝐇𝐀𝐍𝐍𝐄𝐋𝐒📑', url='https://t.me/uni_movies_box')],
+                    ],[  InlineKeyboardButton('📑𝐉𝐎𝐈𝐍 𝐎𝐔𝐑 𝐀𝐋𝐋 𝐂𝐇𝐀𝐍𝐍𝐄𝐋𝐒📑', url='https://t.me/uni_movies_box')]
 
-                    
-                    [
-                        InlineKeyboardButton("😎 𝗔𝗕𝗢𝗨𝗧 𝗠𝗘 🤖", callback_data="about")
-                    ]
                 ]
             )
         )
